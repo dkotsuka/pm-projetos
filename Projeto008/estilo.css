@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+body{
+	background-color: #f5f5f5;
+}
+
+aside h2 {
+	height: 60px;
+	width: 200px;
+	background-color: #141524;
+	background-image: url(img/nucliotlogo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+aside h2 span {
+	visibility: hidden;
+}
+
+#main {
+	display: flex;
+	width: 100%
+}
+#main aside {
+	height: 100vh;
+	width: 200px;
+	background-color: #242536;
+}
+
+#main aside li:hover{
+	background-color: #151524;
+	border-left: 4px solid #ffb946;
+}
+#main aside li {
+	padding-left: 20px;
+}
+#main aside li a{
+	padding: 20px;
+	padding-left: 30px;
+	color: #ffffff;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+#main aside li a.balance{
+	background-image: url(img/balance.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+#main aside li a.dashboard{
+	background-image: url(img/dashboard.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+#main aside li a.basestation{
+	background-image: url(img/basestation.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+#main aside li a.myproject{
+	background-image: url(img/myproject.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+#main aside li a.settings{
+	background-image: url(img/settings.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+#main aside li a span.info {
+	opacity: 0.6; 
+}
+#main .container{
+	width: 100%;
+}
+#main .container nav ul {
+	width: 100%;
+	background-color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	box-shadow: 0 1px 0 0 rgba(0,0,0,0.06);
+	display: flex;
+	flex-direction: row;
+} 
+
+#main .container header {
+	width: 100%;
+	background-color: #242536;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+#main .container header h3 {
+	height: 30px;
+	width: 30px;
+	background-color: #3aca60;
+	border-radius: 20px;
+	margin: 15px 20px;
+	display: flex;
+	align-items: center;
+	float: right;
+}
+#main .container header h3 span {
+	width: 100%;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+#main .container nav ul li{
+	padding: 25px 0;
+}
+#main .container nav ul li a{
+	color: #000000;
+	padding: 25px 0;
+	margin-left: 40px;
+}
+#main .container nav li a:hover{
+	color: #ffb946;
+	border-bottom: 2px solid #ffb946;
+}
+
+#main .container .page{
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+	margin: 20px;
+	padding-left: 45px;
+	background-color: #ffffff;
+}
+#main .container .page form{
+	display: flex;
+	flex-direction: column;
+}
+#main .container .page h2{
+	font-size: 20px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+#main .container .page input{
+	margin-bottom: 10px;
+	max-width: 400px;
+	height: 40px;
+	padding-left: 15px;
+	border: 1px solid #dddddd;
+	border-radius: 
+}
+#main .container .page .checkbox{
+	height: 16px;
+	width: 16px;
+	float: left;
+}
+#main .container .page div{
+	flex-direction: row;
+	padding-bottom: 10px;
+}
+#main .container .page div p{
+	font-size: 14px;
+	margin-left: 30px;
+	max-width: 400px;
+}
+#main .container .page #submit{
+	background-color: #3aca60;
+	margin: 20px 0;
+	height: 40px;
+	width: 400px;
+	border: none;
+	border-radius: 4px;
+	color: #ffffff;
+	font-weight: bold;
+}
