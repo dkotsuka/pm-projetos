@@ -1,21 +1,18 @@
 *{
-	margin: 0;
 	padding: 0;
-	font-family: arial, sans-serif;
+	margin: 0;
 }
-li {
-	list-style: none;
-}
-a {
-	text-decoration: none;
-}
-body{
+body {
+	display: flex;
 	background-color: #f5f5f5;
+	font-family: 'Arial', Sans-serif;
 }
-
-aside h2 {
-	height: 60px;
+aside {
 	width: 200px;
+	background-color: #242536;
+}
+aside h2{
+	height: 60px;
 	background-color: #141524;
 	background-image: url(img/nucliotlogo.png);
 	background-repeat: no-repeat;
@@ -24,158 +21,131 @@ aside h2 {
 aside h2 span {
 	visibility: hidden;
 }
-
-#main {
-	display: flex;
-	width: 100%
+aside nav li{
+	list-style: none;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 14px;
 }
-#main aside {
-	height: 100vh;
-	width: 200px;
-	background-color: #242536;
-}
-
-#main aside li:hover{
+aside nav li:hover{
+	padding-left: 6px;
 	background-color: #151524;
 	border-left: 4px solid #ffb946;
+	cursor: pointer;
 }
-#main aside li {
-	padding-left: 20px;
-}
-#main aside li a{
-	padding: 20px;
-	padding-left: 30px;
-	color: #ffffff;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	display: flex;
-	justify-content: space-between;
-}
-#main aside li a.balance{
-	background-image: url(img/balance.png);
-	background-repeat: no-repeat;
-	background-position: center left;
-}
-#main aside li a.dashboard{
-	background-image: url(img/dashboard.png);
-	background-repeat: no-repeat;
-	background-position: center left;
-}
-#main aside li a.basestation{
-	background-image: url(img/basestation.png);
-	background-repeat: no-repeat;
-	background-position: center left;
-}
-#main aside li a.myproject{
-	background-image: url(img/myproject.png);
-	background-repeat: no-repeat;
-	background-position: center left;
-}
-#main aside li a.settings{
-	background-image: url(img/settings.png);
-	background-repeat: no-repeat;
-	background-position: center left;
-}
-#main aside li a span.info {
-	opacity: 0.6; 
-}
-#main .container{
-	width: 100%;
-}
-#main .container nav ul {
-	width: 100%;
-	background-color: #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	box-shadow: 0 1px 0 0 rgba(0,0,0,0.06);
-	display: flex;
-	flex-direction: row;
-} 
-
-#main .container header {
-	width: 100%;
-	background-color: #242536;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-}
-#main .container header h3 {
-	height: 30px;
-	width: 30px;
-	background-color: #3aca60;
-	border-radius: 20px;
-	margin: 15px 20px;
-	display: flex;
-	align-items: center;
-	float: right;
-}
-#main .container header h3 span {
-	width: 100%;
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: lighter;
+aside nav li i{
+	margin-right: 5px;
+	height: 20px;
+	width: 20px;
 	text-align: center;
 }
-
-#main .container nav ul li{
-	padding: 25px 0;
+aside nav li a{
+	color: #fff;
+	text-decoration: none;
 }
-#main .container nav ul li a{
-	color: #000000;
-	padding: 25px 0;
+aside nav li small{
+	float: right;
+	margin-right: 15px; 
+	font-size: 14px;
+	opacity: 0.6;
+}
+.principal {
+	width: 100%;
+}
+.principal header {
+	height: 60px;
+	background-color: #242536;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.principal header img {
+	margin: 15px;
+}
+.principal .modulo .abas{
+	height: 60px;
+	background-color: #fff;
+	border-bottom: 1px solid #e7e7e7;
+}
+.principal .modulo .abas li{
+	display: inline-block;
 	margin-left: 40px;
 }
-#main .container nav li a:hover{
-	color: #ffb946;
-	border-bottom: 2px solid #ffb946;
+.principal .modulo .abas li a{
+	text-transform: uppercase;
+	display: inline-block;
+	color: #000;
+	height: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	text-decoration: none;
 }
-
-#main .container .page{
+.principal .modulo .abas li a:hover{
+	color: #ffb946;
+	box-shadow: 0 -2px #ffb946 inset;
+}
+.principal .modulo .container .canvas{
+	margin: 20px;
+	padding: 30px;
+	background-color: #fff;
 	border: 1px solid #e7e7e7;
 	border-radius: 4px;
-	margin: 20px;
-	padding-left: 45px;
-	background-color: #ffffff;
 }
-#main .container .page form{
-	display: flex;
-	flex-direction: column;
-}
-#main .container .page h2{
-	font-size: 20px;
-	padding-top: 40px;
-	padding-bottom: 10px;
-}
-#main .container .page input{
+form h2{
 	margin-bottom: 10px;
-	max-width: 400px;
-	height: 40px;
+}
+form li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+form ul{
+	margin-bottom: 30px;
+}
+form input, form select{
 	padding-left: 15px;
-	border: 1px solid #dddddd;
-	border-radius: 
-}
-#main .container .page .checkbox{
-	height: 16px;
-	width: 16px;
-	float: left;
-}
-#main .container .page div{
-	flex-direction: row;
-	padding-bottom: 10px;
-}
-#main .container .page div p{
-	font-size: 14px;
-	margin-left: 30px;
-	max-width: 400px;
-}
-#main .container .page #submit{
-	background-color: #3aca60;
-	margin: 20px 0;
 	height: 40px;
 	width: 400px;
-	border: none;
+	border: 1px solid #dddddd;
 	border-radius: 4px;
-	color: #ffffff;
+	box-sizing: border-box;
+}
+form small{
+	display: block;
+	width: 400px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+form .ok{
+	background-image: url(img/ok.png);
+	background-repeat: no-repeat;
+	background-position: top 10px right; 
+	width: 430px;
+}
+form button{
+	width: 400px;
+	height: 40px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #3aca60;
+	border-radius: 4px;
+	font-size: 16px;
 	font-weight: bold;
+	border: none;
+}
+form .confirmacoes li{
+	font-size: 14px;
+	max-width: 400px;
+	display: flex;
+}
+form .confirmacoes input{
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+form .confirmacoes label{
+}
+::-webkit-input-placeholder {
+	color: #c5c5c5;
 }

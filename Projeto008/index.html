@@ -1,59 +1,109 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Projeto 008</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="https://use.fontawesome.com/be2a540fef.js"></script>
+	<title>Projeto 008</title>
 </head>
 <body>
-	<div id="main">
-		<aside>
-			<h2><span>Nucliot logo</span></h2>
+	<aside>
+		<h2><span>Nucliot</span></h2>
+		<nav>
 			<ul>
-				<li><a href="" class="balance"><span>Balance</span><span class="info">$322</span></a></li>
-				<li><a href="" class="dashboard">Dashboard</a></li>
-				<li><a href="" class="basestation"><span>Base Stations</span><span class="info">22</span></a></li>
-				<li><a href="" class="myproject"><span>My Projects</span><span class="info">4</span></a></li>
-				<li><a href="" class="settings"><span>Settings</span></a></li>
+				<li>
+					<a href="#">
+						<i class="fa fa-usd" aria-hidden="true"></i>
+						<span>Balance</span>
+						<small>$ 322</small>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-area-chart" aria-hidden="true"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-signal" aria-hidden="true"></i>
+						<span>Base Station</span>
+						<small>12</small>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-cubes" aria-hidden="true"></i>
+						<span>My Project</span>
+						<small>4</small>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+						<span>Settings</span>
+					</a>
+				</li>
 			</ul>
-		</aside>
-		<section class="container">
-			<header><h3><span>TD</span></h2></header>
-			<nav>
-				<ul>
-					<li><a href=""><span>ACCOUNT</span></a></li>
-					<li><a href=""><span>BILLING</span></a></li>
-				</ul>
-			</nav>
-			<div class="page">
-				<form>
-					<h2><span>Personal information</span></h2>
-					<input type="email" name="email" placeholder="E-mail">
-					<input type="text" name="fname" placeholder="Firs Name">
-					<input type="text" name="lname" placeholder="Last Name">
-					<input type="text" name="country" placeholder="Country">
-					<input type="phone" name="phone" placeholder="Phone Number">
-
-					<h2><span>Password</span></h2>
-					<input type="password" name="password" placeholder="Actual Password">
-					<input type="password" name="newpassword" placeholder="New Password">
-					<input type="password" name="newpasswordrep" placeholder="New Password Again">
-
-					<h2><span>Anythings</span></h2>
-					<div>
-						<input type="checkbox" name="checkbox1" class="checkbox">
-						<p>Güncelleme ve yenilikleri mail olarak almak istiyorum.</p>
-					</div>
-					<div>
-						<input type="checkbox" name="checkbox1" class="checkbox">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</p>
-					</div>
-					<input type="submit" name="submit" id="submit">
-				</form>
+		</nav>
+	</aside>
+	<section class="principal">
+		<header><a href="#"><img src="img/usuario.png"></a></header>
+		<div class="modulo">
+			<div class="abas">
+				<nav>
+					<ul>
+						<li><a href="#">Acount</a></li>
+						<li><a href="#">Billing</a></li>
+					</ul>
+				</nav>
 			</div>
-		</section>
-	</div>
+			<div class="container">
+				<div class="canvas">
+					<form>
+						<h2>Personal information</h2>
+						<ul>
+							<li class="ok">
+								<input type="email" name="email" placeholder="Email">
+								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.
+								</small>
+							</li>
+							<li><input type="text" name="fname" placeholder="First Name"></li>
+							<li><input type="text" name="lname" placeholder="Last Name"></li>
+							<li class="ok">
+								<select>
+									<option>Country</option>
+									<option>New Zealand</option>
+								</select>
+							</li>
+							<li><input type="phone" name="phone" placeholder="Phone Number"></li>
+
+						</ul>
+
+						<h2>Password</h2>
+						<ul>
+							<li><input type="password" name="password" placeholder="Password"></li>
+							<li><input type="password" name="passwordn" placeholder="New Password"></li>
+							<li><input type="password" name="passwordn2" placeholder="New Password Again"></li>
+						</ul>
+						<h2>Anythings</h2>
+						<ul class="confirmacoes">
+							<li>
+								<input type="checkbox" name="check1">
+								<label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</label>
+							</li>
+							<li>
+								<input type="checkbox" name="check2">
+								<label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</label>
+							</li>
+						</ul>
+						<button>Save</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
 </body>
 </html>
