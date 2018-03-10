@@ -1,0 +1,94 @@
+.resumo{
+	width: 45%;
+	background-color: #ebebeb;
+	border-left: 1px solid #dddcde;
+	padding: 10px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.resumo li{
+	height: 68px;
+	align-items: center;
+	display: flex;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.resumo li:last-child{
+	border: none;
+}
+
+.resumo li img{
+	width: 47px;
+	height: 47px;
+	border: 1px solid #e3e3e3;
+	background-color: #f3f3f3;
+	padding: 2px;
+	border-radius: 2px;
+}
+.resumo li .detalhes{
+	flex-grow: 10;
+	margin-left: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.resumo li .detalhes h2{
+	font-family: 'muliextrabold';
+	font-size: 12px;
+	margin-bottom: 3px;
+	color: #777879;
+}
+
+.resumo li .detalhes small{
+	font-family: 'muliregular';
+	font-size: 10px;
+	margin-bottom: 3px;
+	color: #4a4a4a;
+}
+
+.resumo li .detalhes span{
+	font-size: 10px;
+	color: #9c9c9c;
+
+}
+
+.resumo .preco{
+	align-self: flex-start;
+	margin-top: 13px;
+	color: #777879;
+	font-size: 12px;
+	flex-grow: 1;
+}
+
+.resumo .total table{
+	flex-direction: flex-end;
+	border-top: 1px solid #d5d3d6;
+	padding-top: 10px;
+	border-spacing: 0;
+	margin-top: 112px;
+}
+
+.resumo .total table th,td{
+	color: #777879;
+	padding-bottom: 5px;
+	font-size: 12px;
+}
+.resumo .total table td{
+	font-weight: 400;
+	text-align: right;
+	padding-right: 5px;
+}
+.resumo .total table th{
+	font-weight: 400;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.resumo .total table tfoot *{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 5px;
+	color: #777879;
+	font-family: 'muliextrabold';
+	border-top: 1px solid #d5d3d6;
+}

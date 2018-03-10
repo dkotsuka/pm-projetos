@@ -1,0 +1,40 @@
+@import url(header.css);
+@import url(cartao.css);
+@import url(resumo.css);
+
+*{
+	font-family: 'muliregular', sans-serif;;
+}
+
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%
+}
+
+body{
+	background-image: url(img/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0, 0.27);
+}
+
+h1,h2,h3,ul,li,span,p{
+	margin: 0;
+	padding: 0;
+}
+
+.checkout {
+	width: 680px;
+	height: 550px;
+	background-color: #fff;
+}
+
+.checkout header {
+	height: 40px;
+}
+
+.checkout main {
+	display: flex;
+}

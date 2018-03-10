@@ -1,0 +1,49 @@
+.checkout header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.checkout header div{
+	display: flex;
+	align-items: center;
+}
+
+.checkout header div h1{
+	margin: 0px;
+	padding: 0px;
+	line-height: 40px;
+	font-size: 18px;
+	margin-left: 20px;
+	font-family: 'muliextrabold';
+	color: #5e5f5f;
+}
+
+.checkout header div span{
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 10px;
+	color: #4a4a4a;
+	opacity: 0.5;
+
+}
+
+.checkout header div span strong{
+	font-family: 'muliextrabold';
+}
+
+.checkout header .fechar{
+	height: 17px;
+	width: 17px;
+	text-decoration: none;
+	justify-content: flex-end;
+	margin-right: 18px;
+	background-image: url(img/close.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.checkout header .fechar span{
+	visibility: hidden;
+}

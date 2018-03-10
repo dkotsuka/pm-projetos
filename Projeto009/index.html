@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="principal.css">
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	<title>PROJETO 009</title>
+</head>
+<body>
+	<div class="checkout">
+		<header>
+
+			<div>
+				<h1>Checkout</h1>
+				<span>Shipping > <strong>Payment Method</strong> > Confirmation</span>
+			</div>
+			
+			<a class="fechar" href="#">
+				<span>Fechar</span>
+			</a></header>
+		<main>
+			<div class="cartao">
+				<div class="wallet">
+					<h2>Wallet</h2>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/visa.png">
+								<small>Ending in 1234</small>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<img src="img/mastercard.png">
+								<small>Ending in 2222</small>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<img src="img/discover.png">
+								<small>Ending in 1111</small>
+							</a>
+						</li>
+					</ul></div>
+				<div class="newcard">
+					<form>
+						<fieldset>
+							<legend>New Card</legend>
+							<input type="text" name="nameoncard" placeholder="Name on card">
+							<input type="text" name="cardnumber" placeholder="1111-1111-1111-1112">
+							<input type="text" name="date" class="date" placeholder="MM/YY">
+							<input type="text" name="cvc" class="cvc" placeholder="CVC">
+							<div class="addcard">
+							<input type="checkbox" name="checkbox" >
+							<label for="checkbox" >Add card to wallet</label>
+							</div>
+
+							<button>Continue</button>
+						</fieldset>
+					</form>
+				</div></div>
+			<div class="resumo">
+				<ul>
+					<li>
+						<img src="img/compra1.png">
+						<div class="detalhes">
+							<h2>The Chelsea Boot</h2>
+							<small>Black</small>
+							<span><strong>Quantity:</strong> 1</span>
+						</div>
+						<h3 class="preco">
+							$235
+						</h3>
+					</li>
+
+					<li>
+						<img src="img/compra2.png">
+						<div class="detalhes">
+							<h2>The Twill Snap Backpack</h2>
+							<small>Reverse Denim + Brown leather</small>
+							<span><strong>Quantity:</strong> 1</span>
+						</div>
+						<h3 class="preco">
+							$65
+						</h3>
+					</li>
+
+					<li>
+						<img src="img/compra3.png">
+						<div class="detalhes">
+							<h2>The Twill Zip Tote</h2>
+							<small>Reverse Denim + Black leather</small>
+							<span><strong>Quantity:</strong> 1</span>
+						</div>
+						<h3 class="preco">
+							$48
+						</h3>
+					</li>
+
+					<li>
+						<img src="img/compra4.png">
+						<div class="detalhes">
+							<h2>The Chunky Wool Scarf</h2>
+							<small>Black</small>
+							<span><strong>Quantity:</strong> 1</span>
+						</div>
+						<h3 class="preco">
+							$50
+						</h3>
+					</li>
+				</ul>
+				<div class="total">
+					<table style="width:100%">
+						<tbody>
+	  						<tr>
+								<th>Subtotal</th>
+								<td>$398</td>
+							</tr>
+							<tr>
+								<th>Shipping</th>
+								<td>Free</td>
+							</tr>
+							<tr>
+								<th>Taxes</th>
+								<td>$12.12</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Total</th>
+								<td>$410.12</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+
+			</div>
+		</main>
+	</div>
+
+</body>
+</html>
