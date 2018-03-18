@@ -1,0 +1,83 @@
+aside{
+	background-color: #3a3c40;
+	text-align: center;
+	padding: 40px !important;
+}
+
+aside img{
+	width: 140px;
+	height: 140px;
+	text-align: center;
+}
+
+aside h1{
+	text-transform: uppercase;
+	color: #f5a623;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+aside h2{
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+aside a.portifolio{
+	padding: 15px 30px;
+	font-size: 0.875em !important;
+	font-weight: 900 !important;
+	color: #fff !important;
+	background-color: #f6a623 !important;
+	text-transform: uppercase;
+	box-shadow: 0 4px 0 0 #aa7c2f !important;
+}
+
+aside a.portifolio:hover{
+	background-color: #ffb633 !important;
+}
+
+aside i{
+	color: #ffffff;
+}
+
+aside ul{
+	display: flex;
+	justify-content: center;
+	margin-top: 12px;
+}
+
+aside ul li i{
+	padding: 5px;
+}
+
+aside ul li i:hover{
+	color: #363636;
+	background-color: #999999;
+	border-radius: 3px;
+}
+
+aside h3{
+	display: block;
+	text-align: left;
+	font-size: 1em;
+	color: #eeeeee;
+	margin-bottom: 10px;
+}
+
+aside progress{
+	margin-bottom: 5px !important;
+}
+
+aside progress::-webkit-progress-value{
+	background-color: #eeb65a !important;
+}
+
+aside span {
+	font-size: 0.75em;
+	color: #8fa4af;
+	display: block;
+	text-align: left;
+}

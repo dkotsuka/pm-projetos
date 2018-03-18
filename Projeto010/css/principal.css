@@ -1,0 +1,46 @@
+section{
+	padding: 50px !important;
+	background-color: #fff;
+	border-right: 1px solid #e1e1e1;
+}
+
+section p{
+	font-size: 0.938em;
+	font-weight: 400;
+	color: #666666;
+}
+
+section div h2{
+	color: #d0021b !important;
+	font-size: 1.125em !important;
+	font-weight: 900 !important;
+	border-bottom: 1px solid #d0021b;
+	line-height: 1.4em !important;
+}
+
+section div h2 i{
+	width: 1.6em !important;
+	height: 1.4em !important;
+	text-align: center;
+}
+
+section h3{
+	color: #3a3c40 !important;
+	font-weight: 700 !important;
+	font-size: 1.063em !important;
+	margin: 0 0 2px 0 !important;
+}
+
+section h4{
+	color: #3a3c40 !important;
+	font-weight: 400 !important;
+	font-size: 0.938em !important;
+	margin: 0 0 5px 0 !important;
+}
+
+section h5{
+	color: #3a3c40 !important;
+	font-weight: 300 !important;
+	font-size: 0.938em !important;
+	margin: 0 !important;
+}
