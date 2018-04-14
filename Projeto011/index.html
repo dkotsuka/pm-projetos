@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
@@ -10,12 +12,12 @@
 	<div class="container">
 		<div class="altura">
 			<h2>ALTURA EM METROS</h2>
-			<input type="number" id="altura" placeholder="altura">
+			<input type="number" id="altura" placeholder="altura" min="0">
 		</div>
 
 		<div class="peso">
 			<h2>PESO EM KILOS</h2>
-			<input type="number" id="peso" placeholder="peso">
+			<input type="number" id="peso" placeholder="peso" min="0">
 		</div>
 
 		<div>
@@ -24,8 +26,8 @@
 				<div id="resultado">
 					<button id="voltar"><img src="img/voltar.png"></button>
 					<div>
-						<h3 id="resultado_numero">25,5</h3>
-						<h4 id="resultado_texto">Magreza</h4>
+						<h3 id="resultado_numero"></h3>
+						<h4 id="resultado_texto"></h4>
 					</div>
 				</div>
 			</div>
