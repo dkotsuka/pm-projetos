@@ -14,6 +14,7 @@ const icon = getElement('.icon');
 const display = getElement('#display');
 
 const apiKey = 'http://data.fixer.io/api/latest?access_key=8bc54595f34723d2a4c50191d2e2fd40';
+const apiKey2 = 'https://free.currencyconverterapi.com/api/v5/convert?q=USD_BRL,PHP_BRL&compact=ultra';
 
 let digits = '';
 let currency = 'BRL';
