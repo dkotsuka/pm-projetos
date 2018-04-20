@@ -1,85 +1,62 @@
 body *{
 	font-family: 'Lato', sans-serif;
-}
-
-body{
-	display: flex;
-	justify-content: center;
-	background-color: #555;
-}
-
-a{
-	text-decoration-line: none;
-	color: #000;
-}
-
-h2{
+	font-size: 50px;
+	font-weight: 300;
 	margin: 0;
 	padding: 0;
 }
-.container{
-	box-shadow: 0 0 6px 0 #000;
-	margin: 20px;
-}
-.grid-container {
-  	display: grid;
-  	grid-template-columns: 85px 85px 85px;
-  	text-align: center;
-  	grid-gap: 1px;
-  	background-color: #c6c7cb;
-  	border-radius: 
-}
-.grid-item {
-	background-color: #d8d8d8;
-}
-.grid-item:hover{
-	background-color: #c6c7cb;
-}
-.grid-item h2{
-	font-size: 33px;
-	line-height: 89px;
-	font-weight: 300;
-}
-.clear h2{
-	font-weight: 400;
-}
-.result{
-	height: 89px;
-	grid-column-start: 1;
-  	grid-column-end: 4;
-  	background-color: #202020;
-  	text-align: right;
-}
-
-.result h2{
-	line-height: 89px;
+.display{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 20vh;
 	padding-right: 20px;
-	font-size: 50px;
-	font-weight: 300;
-	color: #fff;
+	background-color: #202020;
 }
-.currency{
-	background-color: #4a90e2;
+.display input{
+	width: 100%;
+	border: none;
+	color: #ffffff;
+	background-color: #202020;
+	font-size50px;
+	text-align: right;
 }
-.currency:hover{
-	background-color: #4a90e2;
+.keyboard{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(4,20vh);
 }
-.currency h2{
-	background-image: url(../img/real.png);
+.keyboard button{
+	background-color: #d8d8d8;
+	border: 2px solid #c6c7cb;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.currency span{
-	visibility: hidden;
+.keyboard button:active{
+	box-shadow: 0 0 0px 10px rgba(255,255,255,0.5) inset;
+}
+.keyboard button:focus{
+	outline: none;
 }
 
-@media (max-width: 480px) {
-	.container{
-		width: 100%;
-		margin: 0;
-	}
-	.grid-container {
-	  	grid-template-columns: auto auto auto;
-	}
+button.select{
+	background-color: #4a90e2;
+	border: none;
+}
+
+button.convert{
+	background-color: #f98611;
+	border: none;
+}
+
+button.converted{
+	background-color: #27ae60;
+	border: none;
+}
+button.usd-brl{
+	background-image: url('../img/real.png');
+	
+}
+button.brl-usd{
+	background-image: url('../img/dolar.png');
 }
