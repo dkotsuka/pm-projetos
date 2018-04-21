@@ -16,11 +16,9 @@ clearButton.addEventListener('click', function(){
 
 currencyButton.addEventListener('click',function(){
 	if (currencyButton.classList.contains('select')) {
-		//estado inicial
 		changeCurrency();
 
 	} else if (currencyButton.classList.contains('convert')) {
-		//preparado para converter
 		changeToState('converted');
 		changeCurrency();
 		httpResquest(convertDisplayValue);
@@ -54,9 +52,7 @@ function changeCurrency() {
 	}
 }
 function changeToState(state) {
-	currencyButton.classList.remove('select');
-	currencyButton.classList.remove('convert');
-	currencyButton.classList.remove('converted');
+	currencyButton.classList.remove('select','convert','converted');
 	currencyButton.classList.add(state);
 }
 

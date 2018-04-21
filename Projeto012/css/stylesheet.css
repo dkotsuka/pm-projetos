@@ -53,10 +53,10 @@ button.converted{
 	background-color: #27ae60;
 	border: none;
 }
-button.usd-brl{
+button.brl-usd{
 	background-image: url('../img/real.png');
 	
 }
-button.brl-usd{
+button.usd-brl{
 	background-image: url('../img/dolar.png');
 }
