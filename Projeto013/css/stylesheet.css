@@ -1,0 +1,133 @@
+*{
+	font-family: 'Lato', sans-serif;
+}
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+
+}
+button{
+	background-color: rgba(0,0,0,0);
+	border: none;
+}
+button:active{
+	background-color: rgba(255,255,255,0.2);
+}
+button:focus {
+	outline:0;
+}
+.hide{
+	display: none!important;
+}
+.addItem{
+	border-bottom: 1px solid #ded8d8;
+}
+.addItem .inputBar{
+	display: flex;
+	background-color: #3498db;
+}
+.addItem .inputBar input{
+	height: 73px;
+	padding-left: 20px;
+	font-size: 20px;
+	flex-grow: 1;
+	border: none;
+}
+.addItem .inputBar button{
+	width: 80px;
+	background-image: url('../img/save.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.addItem .setMinimum{
+	height: 72px;
+	background-color: #34495e;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.addItem .setMinimum div{
+	margin: 16px;
+	font-weight: 300;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+.addItem .setMinimum .minQuantity{
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: 400;
+}
+.saveBar{
+	display: flex;
+	border-bottom: 1px solid #ded8d8;
+}
+.saveBar .back{
+	width: 75px;
+	text-align: center;
+	background-color: #34495e;
+}
+.saveBar .save{
+	flex-grow: 1;
+	text-align: center;
+	background-color: #3498db;
+}
+.saveBar button{
+	height: 72px;
+	width: 100%;
+}
+
+.saveBar .saveButton{
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+}
+.saveBar .saveButton span{
+	margin-left: 5px;
+}
+
+.item .itemQuantity{
+	display: flex;
+	border-bottom: 1px solid #ded8d8;
+}
+.item .itemQuantity h2{
+	margin-left: 18px;
+	font-weight: 300;
+}
+.item .itemQuantity small{
+	padding-left: 8px;
+	font-weight: 300;
+	margin-top: 22px;
+}
+.item .itemQuantity h3{
+	flex-grow: 2;
+	margin-right: 18px;
+	text-align: right;
+	border: none;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0);
+}
+
+.lowQuantity{
+	background-color: #ef3e3e;
+	color: #ffffff;
+}
+
+.regularQuantity{
+	background-color: #ecf0f1;
+	color: #4a4a4a;
+}
+
+.actions{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	background-color: #34495e;
+}
+
+.actions button{
+	height: 72px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<title>Projeto 013</title>
+</head>
+<body>
+	<div class="addItem">
+		<div class="inputBar">
+			<input type="text" class="itemInput">
+			<button class="saveButton"></button>
+		</div>
+		<div class="setMinimum hide">
+			<div><span>Estoque<br>Mínimo</span></div>
+			<div><span class="minQuantity">6</span></div>
+			<button class="addButton"><img src="img/add.png"></button>
+			<button class="removeButton"><img src="img/remove.png"></button>
+		</div>
+	</div>
+
+
+	<div class="saveBar hide">
+		<div class="back">
+			<button>
+				<img src="img/back.png">
+			</button>
+		</div>
+		<div class="save">
+			<button class="saveButton">
+				<img src="img/save.png">
+				<span>Salve suas<br>Alterações</span>
+			</button>
+		</div>
+	</div>
+
+	<ul class="itemsList">
+		<li>
+		</li>
+	</ul>
+
+	<template id="itemTemplate">
+		<div class="item">
+			<div class="itemQuantity lowQuantity">
+				<h2 class="name">Laranjas</h2>
+				<small class="min">Min 6</small>
+				<h3 class="quantity">0</h3>
+			</div>
+			<div class="actions">
+				<button><img src="img/delete.png"></button>
+				<button><img src="img/remove.png"></button>
+				<button><img src="img/add.png"></button>
+			</div>
+		</div>
+	</template>	
+
+
+	<script src="js/utils.js"></script>
+	<script src="js/inputbar.js"></script>
+</body>
+</html>
