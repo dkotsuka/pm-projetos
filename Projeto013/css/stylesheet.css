@@ -7,7 +7,7 @@ ul, li{
 	list-style: none;
 }
 body{
-
+	background-color: #eee;
 }
 button{
 	background-color: rgba(0,0,0,0);
@@ -130,4 +130,13 @@ button:focus {
 
 .actions button{
 	height: 72px;
+}
+
+
+@media (min-width: 480px) {
+	body{
+		margin: 20px auto;
+		width: 480px;
+		box-shadow: 0 0 8px #c8c8c8;
+	}
 }

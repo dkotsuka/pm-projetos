@@ -9,56 +9,61 @@
 	<title>Projeto 013</title>
 </head>
 <body>
-	<div class="addItem">
-		<div class="inputBar">
-			<input type="text" class="itemInput">
-			<button class="saveButton"></button>
-		</div>
-		<div class="setMinimum hide">
-			<div><span>Estoque<br>Mínimo</span></div>
-			<div><span class="minQuantity">6</span></div>
-			<button class="addButton"><img src="img/add.png"></button>
-			<button class="removeButton"><img src="img/remove.png"></button>
-		</div>
-	</div>
-
-
-	<div class="saveBar hide">
-		<div class="back">
-			<button>
-				<img src="img/back.png">
-			</button>
-		</div>
-		<div class="save">
-			<button class="saveButton">
-				<img src="img/save.png">
-				<span>Salve suas<br>Alterações</span>
-			</button>
-		</div>
-	</div>
-
-	<ul class="itemsList">
-		<li>
-		</li>
-	</ul>
 
 	<template id="itemTemplate">
 		<div class="item">
-			<div class="itemQuantity lowQuantity">
-				<h2 class="name">Laranjas</h2>
-				<small class="min">Min 6</small>
-				<h3 class="quantity">0</h3>
+			<div class="itemQuantity {{lowQuantity}}">
+				<h2 class="name">{{name}}</h2>
+				<small class="min">Min {{minimum}}</small>
+				<h3 class="quantity">{{available}}</h3>
 			</div>
-			<div class="actions">
-				<button><img src="img/delete.png"></button>
-				<button><img src="img/remove.png"></button>
-				<button><img src="img/add.png"></button>
+			<div class="actions hide">
+				<button class="deleteItemButton"><img src="img/delete.png"></button>
+				<button class="addItemButton"><img src="img/add.png"></button>
+				<button class="removeItemButton"><img src="img/remove.png"></button>
 			</div>
 		</div>
-	</template>	
+	</template>
 
+	<div class="tobBar">
+		<div class="addItem">
+			<div class="inputBar">
+				<input type="text" class="itemInput">
+				<button class="saveButton"></button>
+			</div>
+			<div class="setMinimum hide">
+				<div><span>Estoque<br>Mínimo</span></div>
+				<div><span class="minQuantity">6</span></div>
+				<button class="addButton"><img src="img/add.png"></button>
+				<button class="removeButton"><img src="img/remove.png"></button>
+			</div>
+		</div>
+
+
+		<div class="saveBar hide">
+			<div class="back">
+				<button class="cancelButton">
+					<img src="img/back.png">
+				</button>
+			</div>
+			<div class="save">
+				<button class="saveButton">
+					<img src="img/save.png">
+					<span>Salve suas<br>Alterações</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	
+
+	<ul id="itemsList">
+	</ul>
 
 	<script src="js/utils.js"></script>
 	<script src="js/inputbar.js"></script>
+	<script src="js/itemList.js"></script>
+	<script src="js/saveBar.js"></script>
+	<script src="js/listManager.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

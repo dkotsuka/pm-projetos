@@ -1,0 +1,1 @@
+const lm = new ListManager();

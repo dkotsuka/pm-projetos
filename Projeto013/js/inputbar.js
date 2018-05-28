@@ -26,18 +26,18 @@ class InputBar {
 	getInput(){
 		return{
 			name: $(".itemInput",this.el).value,
-			minimumStock: parseInt($(".minQuantity",this.el).innerHTML),
+			minimum: parseInt($(".minQuantity",this.el).innerHTML),
 			available: 0
 		}
 	}
 
 	plusMin(){
-		$(".minQuantity",this.el).innerHTML = this.getInput().minimumStock + 1;
+		$(".minQuantity",this.el).innerHTML = this.getInput().minimum + 1;
 	}
 
 	minusMin(){
-		if (this.getInput().minimumStock > 1) {
-			$(".minQuantity",this.el).innerHTML = this.getInput().minimumStock - 1;
+		if (this.getInput().minimum > 1) {
+			$(".minQuantity",this.el).innerHTML = this.getInput().minimum - 1;
 		}
 	}
 
@@ -45,11 +45,9 @@ class InputBar {
 		if (this.getInput().name.length == 0) {
 			alert("Preencha o nome do produto.")
 		} else {
-			console.dir(this.getInput());
+			lm.add(this.getInput());
 			this.hideMinimumSetup();
 		}
 		
 	}
 }
-
-const i = new InputBar;
