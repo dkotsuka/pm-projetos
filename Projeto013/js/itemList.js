@@ -31,19 +31,25 @@ class ListItem {
 	onClickItem(event){
 		const actions = event.currentTarget.nextElementSibling;
 		actions.classList.toggle("hide");
+		lm.inputBar.hideMinimumSetup();
 	}
 
 	onClickDelete(){
-		this.el.remove();
+		const id = this.el.getAttribute("id").replace("_","");
+		lm.remove(parseInt(id));
 	}
 	onClickAdd(){
 		const quantity = $(".quantity",this.el)
 		quantity.innerHTML = parseInt(quantity.innerHTML) + 1;
+		this.available = parseInt(quantity.innerHTML);
+		lm.saveBar.show();
 	}
 	onClickRemove(){
 		const quantity = $(".quantity",this.el)
 		if (parseInt(quantity.innerHTML) > 0) {
 			quantity.innerHTML = parseInt(quantity.innerHTML) - 1;
+			this.available = parseInt(quantity.innerHTML);
+			lm.saveBar.show();
 		}
 	}
 }

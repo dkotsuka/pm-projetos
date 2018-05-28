@@ -46,6 +46,7 @@ class InputBar {
 			alert("Preencha o nome do produto.")
 		} else {
 			lm.add(this.getInput());
+			$(".itemInput",this.el).value = "";
 			this.hideMinimumSetup();
 		}
 		

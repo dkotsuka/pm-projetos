@@ -25,11 +25,15 @@ class ListManager {
 	}
 
 	remove(index){
-		this.itemList.splice(index);
+		this.itemList.splice(index,1);
+		this.saveToLocalStorage();
+		this.render();
 	}
 
 	render(){
 		this.itemList = this.loadFromLocalStorage();
+		$("#itemsList").innerHTML = "";
+
 		this.itemList.forEach(function(item, index){
 			$("#itemsList").innerHTML += `<li id="_${index}"></li>`;
 		});

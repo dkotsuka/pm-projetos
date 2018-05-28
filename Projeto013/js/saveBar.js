@@ -20,10 +20,13 @@ class SaveBar{
 	}
 
 	onClickSave(){
+		lm.saveToLocalStorage();
+		lm.render();
 		this.hide();
 	}
 
 	onClickCancel(){
+		lm.render();
 		this.hide();
 	}
 }

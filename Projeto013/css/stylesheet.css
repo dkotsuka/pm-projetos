@@ -7,7 +7,11 @@ ul, li{
 	list-style: none;
 }
 body{
+	height: 100vh;
 	background-color: #eee;
+	background-image: url("../img/empty.png");
+	background-position: center;
+	background-repeat: no-repeat;
 }
 button{
 	background-color: rgba(0,0,0,0);
@@ -22,6 +26,14 @@ button:focus {
 .hide{
 	display: none!important;
 }
+
+.topBar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
 .addItem{
 	border-bottom: 1px solid #ded8d8;
 }
@@ -93,6 +105,7 @@ button:focus {
 .item .itemQuantity{
 	display: flex;
 	border-bottom: 1px solid #ded8d8;
+	background-color: #ecf0f1;
 }
 .item .itemQuantity h2{
 	margin-left: 18px;
@@ -113,13 +126,8 @@ button:focus {
 }
 
 .lowQuantity{
-	background-color: #ef3e3e;
-	color: #ffffff;
-}
-
-.regularQuantity{
-	background-color: #ecf0f1;
-	color: #4a4a4a;
+	background-color: #ef3e3e !important;
+	color: #ffffff !important;
 }
 
 .actions{
@@ -132,11 +140,6 @@ button:focus {
 	height: 72px;
 }
 
-
-@media (min-width: 480px) {
-	body{
-		margin: 20px auto;
-		width: 480px;
-		box-shadow: 0 0 8px #c8c8c8;
-	}
+.listContainer{
+	margin-top: 73px;
 }
